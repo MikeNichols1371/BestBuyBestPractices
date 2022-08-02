@@ -32,6 +32,10 @@ var productRepo = new ProductRepository(conn);
 
 productRepo.CreateProduct("Mikes New Product", 11.99, 10);
 
+productRepo.UpdateProduct("Mikes Updated Product", 15.99, 10);
+
+productRepo.DeleteProduct("Mikes New Product");
+
 var products = productRepo.GetAllProducts();
 
 foreach (var product in products)
