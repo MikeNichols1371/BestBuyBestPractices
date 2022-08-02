@@ -30,7 +30,7 @@ foreach (var department in departments)
 
 var productRepo = new ProductRepository(conn);
 
-productRepo.CreateProduct("Mikes New Product", 11.99, 7);
+productRepo.CreateProduct("Mikes New Product", 11.99, 10);
 
 var products = productRepo.GetAllProducts();
 
